@@ -1,0 +1,219 @@
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Bungee', sans-serif;
+    font-size: 2rem;
+}
+h4 {
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+p {
+    font-family: 'Bungee', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("images/galaxybg.avif");
+}
+
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 80vh;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color:aliceblue;
+}
+
+.section-1 img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-2 {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.section-2 h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.section-2 .border {
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.section-2 .border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.section-2 .border h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 2rem;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s;
+}
+
+.section-2 .border:hover::before {
+    opacity: 0;
+}
+
+.section-2 .border:hover h1 {
+    opacity: 1;
+}
+
+/* Reset opacity for non-hovered state */
+.border.img-1::before {
+    background-image: url("images/hardworking.png");
+}
+
+.border.img-2::before {
+    background-image: url("images/discipline");
+    background-position: center;
+}
+
+.border.img-3::before {
+    background-image: url("images/goaloriented.jpg");
+}
+
+.border::before {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    background-color: white;
+    height: 100vh;
+}
+
+.border.img-4::before {
+    background-image: url("images/nidec.jpg");
+    background-position: center;
+}
+
+.border.img-5::before {
+    background-image: url("images/website.png");
+    background-size: contain;
+    background-position: center;
+    
+}
+.border.img-6::before {
+    background-image: url("images/SAFLCE.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.border::before {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+.container-4 {
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.container-4 .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-5{
+    padding: 3rem;
+    background-color: white;
+    height: 80vh;
+    position: relative;
+}
+
+.section-5 {
+    display: flex;
+    justify-content: space-between;
+}
+.section-5 .title { 
+    display: flex;
+    align-items: center;
+    width: 50%
+}
+
+.section-5 .title h1 {
+    font-size: 50px;
+}
+
+.section-5 h4 {
+    width: 50%;
+    display: flex;
+    order: 2; /* Set the order to 2 to move it below the title */
+}
+
+.section-5 img {
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    z-index: 1;
+}
+
+
+
+
+
